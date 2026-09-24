@@ -1,0 +1,42 @@
+name: Refresh Indonesia job list
+
+on:
+  schedule:
+    # 01:00 UTC = 08:00 WIB (Jakarta) daily
+    - cron: "0 1 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Refresh job list
+        env:
+          JOOBLE_API_KEY: ${{ secrets.JOOBLE_API_KEY }}
+        run: python scripts/run.py
+
+      - name: Commit changes if anything changed
+        run: |
+          git config user.name "id-job-radar-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add README.md data/jobs.json data/jobs.csv
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Daily job list refresh"
+            git push
+          fi

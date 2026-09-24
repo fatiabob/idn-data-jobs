@@ -1,0 +1,13 @@
+# Search terms sent to the Jooble API (location is fixed to "Indonesia"
+# separately in scripts/fetch_jooble.py). Add/remove roles your friends
+# care about — each keyword is one API call, and the free Jooble key
+# has a lifetime cap of 500 calls total, so keep this list focused.
+
+keywords:
+  - data analyst
+  - data scientist
+  - data engineer
+  - business intelligence analyst
+  - machine learning engineer
+  - statistician
+  - product analyst

@@ -1,0 +1,73 @@
+# Companies to poll via their public ATS job-board APIs.
+# ats: "greenhouse" -> https://boards-api.greenhouse.io/v1/boards/<slug>/jobs
+# ats: "lever"      -> https://api.lever.co/v0/postings/<slug>?mode=json
+#
+# How to find a company's slug:
+#   1. Open their public careers page and look for a link to
+#      job-boards.greenhouse.io/<slug> or jobs.lever.co/<slug>.
+#   2. Or open the careers page in a browser, open DevTools -> Network,
+#      reload, and look for a request to boards-api.greenhouse.io or
+#      api.lever.co — the slug is in that request URL.
+#   3. Test it directly: a working Greenhouse slug returns JSON at
+#      https://boards-api.greenhouse.io/v1/boards/<slug>/jobs
+#      a working Lever slug returns JSON at
+#      https://api.lever.co/v0/postings/<slug>?mode=json
+#
+# Add as many companies as you and your friends want tracked. Entries
+# that 404 are skipped automatically and logged, so it's safe to guess
+# and prune later.
+
+companies:
+  - name: Xendit
+    ats: greenhouse
+    slug: xendit
+
+  # Seed a few more likely candidates below — verify/replace slugs as
+  # you confirm them (see instructions above). Unverified entries are
+  # commented out so the workflow doesn't fail on them; uncomment once
+  # you've confirmed the slug works.
+
+  # - name: GoTo Group
+  #   ats: greenhouse
+  #   slug: goto
+
+  # - name: Traveloka
+  #   ats: greenhouse
+  #   slug: traveloka
+
+  # - name: Kredivo
+  #   ats: lever
+  #   slug: kredivo
+
+  # - name: Ajaib
+  #   ats: lever
+  #   slug: ajaib
+
+# Locations (case-insensitive substring match) that count as "Indonesia"
+# for filtering multi-country listings like "Jakarta, Singapore".
+location_keywords:
+  - indonesia
+  - jakarta
+  - bali
+  - denpasar
+  - surabaya
+  - bandung
+  - yogyakarta
+  - semarang
+  - medan
+
+# Job titles (case-insensitive substring match) to keep. A company's
+# board returns ALL of its open roles, so this is what narrows it down
+# to data-related ones. Leave this list empty ([]) to keep every role.
+title_keywords:
+  - data
+  - analytics
+  - analyst
+  - machine learning
+  - ml engineer
+  - business intelligence
+  - "bi "
+  - statistician
+  - product analyst
+  - data scientist
+  - data engineer
