@@ -18,7 +18,14 @@ Every day a GitHub Actions workflow:
 ## Jobs
 
 <!-- JOBS:START -->
-_Not run yet — see "Getting this running" below, or trigger the workflow once._
+_Last refreshed: 2026-09-24 20:39 UTC_
+
+| Company | Role | Location | Posted | Source |
+|---|---|---|---|---|
+| Xendit | [IT GRC Analyst](https://job-boards.greenhouse.io/xendit/jobs/7731687003) | Jakarta, Indonesia | 2026-06-18 | greenhouse |
+
+_Showing 1 of 1 matched roles. Full list: [`data/jobs.json`](data/jobs.json) / [`data/jobs.csv`](data/jobs.csv)._
+
 <!-- JOBS:END -->
 
 ## Getting this running on your own copy
