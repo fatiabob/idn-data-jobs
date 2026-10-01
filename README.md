@@ -18,7 +18,7 @@ Every day a GitHub Actions workflow:
 ## Jobs
 
 <!-- JOBS:START -->
-_Last refreshed: 2026-09-30 06:14 UTC_
+_Last refreshed: 2026-10-01 06:46 UTC_
 
 | Company | Role | Location | Posted | Source |
 |---|---|---|---|---|
