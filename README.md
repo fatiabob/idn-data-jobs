@@ -18,13 +18,9 @@ Every day a GitHub Actions workflow:
 ## Jobs
 
 <!-- JOBS:START -->
-_Last refreshed: 2026-10-29 06:41 UTC_
+_Last refreshed: 2026-10-30 06:43 UTC_
 
-| Company | Role | Location | Posted | Source |
-|---|---|---|---|---|
-| Xendit | [IT GRC Analyst](https://job-boards.greenhouse.io/xendit/jobs/7731687003) | Jakarta, Indonesia | 2026-06-18 | greenhouse |
-
-_Showing 1 of 1 matched roles. Full list: [`data/jobs.json`](data/jobs.json) / [`data/jobs.csv`](data/jobs.csv)._
+_No matching Indonesia jobs found in the last run — check back tomorrow, or see the workflow logs._
 
 <!-- JOBS:END -->
 
