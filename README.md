@@ -18,7 +18,7 @@ Every day a GitHub Actions workflow:
 ## Jobs
 
 <!-- JOBS:START -->
-_Last refreshed: 2026-11-13 07:32 UTC_
+_Last refreshed: 2026-11-14 07:17 UTC_
 
 _No matching Indonesia jobs found in the last run — check back tomorrow, or see the workflow logs._
 
